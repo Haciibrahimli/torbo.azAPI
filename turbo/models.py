@@ -30,11 +30,13 @@ GEAR = (
     ("Robotlasdirilmis", "Robotlasdirilmis"),
 )
 
+
 OTURUCU = (
     ("on", "on"),
     ("arxa", "arxa"),
     ("tam", "tam")
 )
+
 
 CONDITIONS = (
     ("Yeni", "Yeni"),
@@ -42,11 +44,14 @@ CONDITIONS = (
 )
 
 
+
 class Marka(DateMixin):
     name = models.CharField(max_length=255, verbose_name="Marka")
 
+
     def __str__(self):
         return self.name
+
 
     class Meta:
         ordering = ("-created_at",)
